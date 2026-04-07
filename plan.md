@@ -34,6 +34,7 @@ File Mapping (list of files) =
     - suppliers.php
         DONE
     - products.php
+        DONE
     - materials.php
     - jobroles.php
     - projects.php
