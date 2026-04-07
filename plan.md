@@ -14,9 +14,9 @@ Main challenges =
 
 File Mapping (list of files) = 
     - setup.sql #temp file to store sql code -- used to form the database 
-    - db.php
+    - db.php #mysqli connection,, included by every page
     - nav.php #for html only nav bar, included inside each <body> of every page 
-    - style.css
+    - style.css #
     - login.php
     - register.php
     - logout.php
