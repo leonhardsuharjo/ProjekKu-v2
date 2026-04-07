@@ -12,7 +12,7 @@ Main challenges =
     - phpmyadmin supports a specified folder where the operation is conducted
 
 File Mapping (list of files) = 
-    - setup.sql
+    - setup.sql #temp file to store sql code -- used to form the database 
     - db.php
     - nav.php #for html only nav bar, included inside each <body> of every page 
     - style.css
