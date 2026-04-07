@@ -16,8 +16,8 @@ File Mapping (list of files) =
     - setup.sql #temp file to store sql code -- used to form the database 
     - db.php #mysqli connection,, included by every page
     - nav.php #for html only nav bar, included inside each <body> of every page 
-    - style.css #
-    - login.php
+    - style.css #Minimal CSS — tables, forms, nav, buttons, insight colors
+    - login.php #
     - register.php
     - logout.php
     - index.php
