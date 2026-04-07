@@ -1,6 +1,6 @@
 Main planning sheet for ProjekKu V2 
 
-General
+General picture 
 
 Things to be noted here = 
     - Main Pages 
