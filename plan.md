@@ -30,6 +30,7 @@ File Mapping (list of files) =
     - index.php # starting point -- HOME
         DONE
     - customers.php
+        DONE 
     - suppliers.php
     - products.php
     - materials.php
