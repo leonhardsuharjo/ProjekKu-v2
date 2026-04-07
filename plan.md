@@ -32,6 +32,7 @@ File Mapping (list of files) =
     - customers.php
         DONE 
     - suppliers.php
+        DONE
     - products.php
     - materials.php
     - jobroles.php
