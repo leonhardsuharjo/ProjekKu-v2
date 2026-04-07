@@ -24,6 +24,7 @@ File Mapping (list of files) =
     - nav.php #for html only nav BAR, included inside each <body> of every page 
         DONE
     - style.css #Minimal CSS — tables, forms, nav, buttons, insight colors
+        
     - login.php #to start Session
         DONE
     - register.php # register form and save password through HASH
@@ -49,3 +50,4 @@ File Mapping (list of files) =
     - project_products.php # N to N page to assign products to project 
         DONE
     - project_labour.php # Report — calculates MaterialCost + LabourCost via SQL subqueries, computes GrossProfit live, NO STORED derived values -- no specific database schema for this page 
+        DONE
