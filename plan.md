@@ -1,6 +1,7 @@
 Main planning sheet for ProjekKu V2 
 
-General picture 
+General picture of project = 
+    a php local app that acts as project manager where its users can enter 
 
 Things to be noted here = 
     - Main Pages 
@@ -25,5 +26,5 @@ File Mapping (list of files) =
     - materials.php
     - jobroles.php
     - projects.php
-    - productmaterials.php
-    - project_products.php #
+    - productmaterials.php #
+    - project_products.php # N to N page to assign products to project 
