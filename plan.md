@@ -27,7 +27,8 @@ File Mapping (list of files) =
         DONE
     - logout.php # destroy session and redirect to login 
         DONE
-    - index.php
+    - index.php # starting point -- HOME
+        DONE
     - customers.php
     - suppliers.php
     - products.php
