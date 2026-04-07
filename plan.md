@@ -10,4 +10,11 @@ Main challenges =
 
 File Mapping (list of files) = 
     - setup.sql
+    - db.php
+    - nav.php #for html only nav bar, included inside each <body> of every page 
+    - style.css
+    - login.php
+    - register.php
+    - logout.php
+    - index.php
     - 
