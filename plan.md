@@ -9,8 +9,8 @@ Things to be noted here =
     - App workflow (what the app will look like)
 
 Main challenges = 
-    - phpmyadmin supports a specified folder where the operation is conducted (therefore this git folder acts as duplicate of the OG files used in ops)
-    - 
+    - phpmyadmin supports their own specified folder location where the operation is conducted (therefore this git folder acts as duplicate of the OG files used in ops)
+      - location = C:/xampp/htdocs/[enterprise_managerNAME]/ 
 
 File Mapping (list of files) = 
     - setup.sql #temp file to store sql code -- used to form the database 
