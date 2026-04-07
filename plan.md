@@ -8,6 +8,8 @@ Things to be noted here =
     - Main Database tables
     - App workflow (what the app will look like)
 
+Home page = index.php 
+
 Main challenges = 
     - phpmyadmin supports their own specified folder location where the operation is conducted (therefore this git folder acts as duplicate of the OG files used in ops)
       - location = C:/xampp/htdocs/[enterprise_managerNAME]/ 
