@@ -20,12 +20,13 @@ Main challenges =
 
 File Mapping (list of files) = 
     - setup.sql #temp file to store sql code -- used to form the database 
+        
     - db.php #mysqli connection,, included by every page
         DONE
     - nav.php #for html only nav BAR, included inside each <body> of every page 
         DONE
     - style.css #Minimal CSS — tables, forms, nav, buttons, insight colors
-
+        DONE
     - login.php #to start Session
         DONE
     - register.php # register form and save password through HASH
