@@ -24,7 +24,7 @@ File Mapping (list of files) =
     - register.php # register form and save password through HASH
         DONE
     - logout.php # destroy session and redirect to login 
-        
+        DONE
     - index.php
     - customers.php
     - suppliers.php
