@@ -17,8 +17,9 @@ File Mapping (list of files) =
     - db.php #mysqli connection,, included by every page
         DONE
     - nav.php #for html only nav BAR, included inside each <body> of every page 
+        DONE
     - style.css #Minimal CSS — tables, forms, nav, buttons, insight colors
-    - login.php #
+    - login.php #to start Session
     - register.php
     - logout.php
     - index.php
