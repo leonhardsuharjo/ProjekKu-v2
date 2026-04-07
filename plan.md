@@ -22,4 +22,8 @@ File Mapping (list of files) =
     - customers.php
     - suppliers.php
     - products.php
-    - materials 
+    - materials.php
+    - jobroles.php
+    - projects.php
+    - productmaterials.php
+    - project_products.php #
