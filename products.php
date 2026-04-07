@@ -61,3 +61,107 @@ while ($s = $suppliers->fetch_assoc()) {
     $suppliers_arr[] = $s;
 }
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products - Enterprise Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<?php include "nav.php"; ?>
+<div class="container">
+    <h1>Products</h1>
+    <?php if ($message !== ""): ?>
+    <div class="msg"><?php echo htmlspecialchars($message); ?></div>
+    <?php endif; ?>
+
+    <div class="form-box">
+        <?php if ($edit_data): ?>
+        <h2>Edit Product</h2>
+        <form method="post" action="products.php">
+            <input type="hidden" name="action" value="edit">
+            <input type="hidden" name="ProductID" value="<?php echo $edit_data['ProductID']; ?>">
+            <div class="form-group">
+                <label>Product Name</label>
+                <input type="text" name="ProductName" value="<?php echo htmlspecialchars($edit_data['ProductName']); ?>" required>
+            </div>
+            <div class="form-group">
+                <label>Selling Price</label>
+                <input type="number" name="SellingPrice" step="0.01" value="<?php echo $edit_data['SellingPrice']; ?>" required>
+            </div>
+            <div class="form-group">
+                <label>Supplier</label>
+                <select name="SupplierID">
+                    <option value="0">-- None --</option>
+                    <?php foreach ($suppliers_arr as $s): ?>
+                    <option value="<?php echo $s['SupplierID']; ?>" <?php if ($edit_data['SupplierID'] == $s['SupplierID']) echo 'selected'; ?>>
+                        <?php echo htmlspecialchars($s['SupplierName']); ?>
+                    </option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Update Product</button>
+            <a href="products.php" class="btn btn-edit" style="margin-left:8px;">Cancel</a>
+        </form>
+        <?php else: ?>
+        <h2>Add New Product</h2>
+        <form method="post" action="products.php">
+            <input type="hidden" name="action" value="add">
+            <div class="form-group">
+                <label>Product Name</label>
+                <input type="text" name="ProductName" required>
+            </div>
+            <div class="form-group">
+                <label>Selling Price</label>
+                <input type="number" name="SellingPrice" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label>Supplier</label>
+                <select name="SupplierID">
+                    <option value="0">-- None --</option>
+                    <?php foreach ($suppliers_arr as $s): ?>
+                    <option value="<?php echo $s['SupplierID']; ?>"><?php echo htmlspecialchars($s['SupplierName']); ?></option>
+                    <?php endforeach; ?>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Product</button>
+        </form>
+        <?php endif; ?>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Product Name</th>
+                <th>Selling Price</th>
+                <th>Supplier</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php while ($row = $records->fetch_assoc()): ?>
+            <tr>
+                <td><?php echo $row['ProductID']; ?></td>
+                <td><?php echo htmlspecialchars($row['ProductName']); ?></td>
+                <td><?php echo number_format($row['SellingPrice'], 2); ?></td>
+                <td><?php echo htmlspecialchars($row['SupplierName'] ?? '-'); ?></td>
+                <td class="action-btns">
+                    <a href="products.php?edit=<?php echo $row['ProductID']; ?>" class="btn btn-edit">Edit</a>
+                    <a href="productmaterials.php?product_id=<?php echo $row['ProductID']; ?>" class="btn btn-link">Materials</a>
+                    <form method="post" action="products.php">
+                        <input type="hidden" name="action" value="delete">
+                        <input type="hidden" name="ProductID" value="<?php echo $row['ProductID']; ?>">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        <?php endwhile; ?>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
