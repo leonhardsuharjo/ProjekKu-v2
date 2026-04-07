@@ -7,6 +7,9 @@ Things to be noted here =
     - Main Pages 
     - Main Database tables
     - App workflow (what the app will look like)
+  
+Possible error / bottleneck = 
+    db php 
 
 Home page = index.php 
 
