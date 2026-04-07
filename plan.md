@@ -1,5 +1,7 @@
 Main planning sheet for ProjekKu V2 
 
+General
+
 Things to be noted here = 
     - Main Pages 
     - Main Database tables
@@ -17,4 +19,7 @@ File Mapping (list of files) =
     - register.php
     - logout.php
     - index.php
-    - 
+    - customers.php
+    - suppliers.php
+    - products.php
+    - materials 
