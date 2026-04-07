@@ -21,7 +21,7 @@ File Mapping (list of files) =
     - style.css #Minimal CSS — tables, forms, nav, buttons, insight colors
     - login.php #to start Session
         DONE
-    - register.php
+    - register.php #
     - logout.php
     - index.php
     - customers.php
