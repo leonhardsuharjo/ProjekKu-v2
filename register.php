@@ -32,3 +32,41 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register - Enterprise Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="login-wrap">
+    <h1>Register</h1>
+    <?php if ($message !== ""): ?>
+    <div class="msg"><?php echo $message; ?></div>
+    <?php endif; ?>
+    <form method="post" action="register.php">
+        <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" name="name" required>
+        </div>
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" name="username" required>
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <label>Confirm Password</label>
+            <input type="password" name="confirm" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+        &nbsp;<a href="login.php">Already have an account?</a>
+    </form>
+</div>
+</body>
+</html>
