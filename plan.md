@@ -22,7 +22,9 @@ File Mapping (list of files) =
     - login.php #to start Session
         DONE
     - register.php # register form and save password through HASH
-    - logout.php
+        DONE
+    - logout.php # destroy session and redirect to login 
+        
     - index.php
     - customers.php
     - suppliers.php
