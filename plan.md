@@ -10,6 +10,7 @@ Things to be noted here =
   
 Possible error / bottleneck = 
     db php 
+    style css
 
 Home page = index.php 
 
@@ -24,7 +25,7 @@ File Mapping (list of files) =
     - nav.php #for html only nav BAR, included inside each <body> of every page 
         DONE
     - style.css #Minimal CSS — tables, forms, nav, buttons, insight colors
-        
+
     - login.php #to start Session
         DONE
     - register.php # register form and save password through HASH
