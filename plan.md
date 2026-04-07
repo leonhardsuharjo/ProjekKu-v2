@@ -38,6 +38,7 @@ File Mapping (list of files) =
     - materials.php
         DONE
     - jobroles.php
+        DONE
     - projects.php
     - productmaterials.php # N:N page to link materials to a product
     - project_products.php # N to N page to assign products to project 
