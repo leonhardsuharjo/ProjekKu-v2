@@ -12,7 +12,8 @@ Possible error / bottleneck =
     db php 
     style css
 
-Home page = index.php 
+Home page = 
+    index.php 
 
 Main challenges = 
     - phpmyadmin supports their own specified folder location where the operation is conducted (therefore this git folder acts as duplicate of the OG files used in ops)
@@ -20,7 +21,7 @@ Main challenges =
 
 File Mapping (list of files) = 
     - setup.sql #temp file to store sql code -- used to form the database 
-        
+
     - db.php #mysqli connection,, included by every page
         DONE
     - nav.php #for html only nav BAR, included inside each <body> of every page 
