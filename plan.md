@@ -42,5 +42,6 @@ File Mapping (list of files) =
     - projects.php
         DONE
     - productmaterials.php # N:N page to link materials to a product
+        DONE
     - project_products.php # N to N page to assign products to project 
     - project_labour.php # Report — calculates MaterialCost + LabourCost via SQL subqueries, computes GrossProfit live, NO STORED derived values -- no specific database schema for this page 
